@@ -64,7 +64,7 @@ class inosshd {
 
   define build_config($default_settings, $custom_settings) {
 
-    # Define groups depending on the OS
+    # Define service name depending on the OS
     $sshsrv = $::osfamily ? {
       RedHat  => 'sshd',
       Debian  => 'ssh',
